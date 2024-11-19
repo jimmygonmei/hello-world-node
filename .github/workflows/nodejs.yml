@@ -1,6 +1,8 @@
 name: Node.js CI
 
 on:
+  workflow_dispatch:  # This enables manual triggering
+
   push:
     branches:
       - master
