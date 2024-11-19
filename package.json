@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"  // <-- This should be set to "jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,7 @@
     "express": "^4.21.1"
   },
   "devDependencies": {
-    "jest": "^29.0.0",  // <-- Make sure jest is installed
-    "supertest": "^6.0.0"  // <-- Make sure supertest is installed
+    "jest": "^29.0.0",
+    "supertest": "^6.0.0"
   }
 }
