@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"  // <-- This should be set to "jest"
   },
   "keywords": [],
   "author": "",
@@ -11,8 +11,9 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",  // <-- Make sure jest is installed
+    "supertest": "^6.0.0"  // <-- Make sure supertest is installed
   }
-}
-"scripts": {
-  "test": "jest"
 }
