@@ -6,6 +6,12 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+// Export app for testing
+module.exports = app;
+
+if (require.main === module) {
+  // Only listen if this file is run directly
+  app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+  });
+}
